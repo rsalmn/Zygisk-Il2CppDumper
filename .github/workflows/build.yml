@@ -1,5 +1,8 @@
 name: Build
 on:
+  push:
+    branches-ignore:
+      - main
   workflow_dispatch:
       inputs:
         package_name:
