@@ -20,7 +20,7 @@
 void hack_start(const char *game_data_dir) {
     bool load = false;
     for (int i = 0; i < 10; i++) {
-        void *handle = xdl_open("libil2cpp.so", 0);
+        void *handle = xdl_open("liblogic.so", 0);
         if (handle) {
             load = true;
             il2cpp_api_init(handle);
